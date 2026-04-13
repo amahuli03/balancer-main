@@ -21,6 +21,7 @@ import ManageMeds from "../pages/ManageMeds/ManageMeds.tsx";
 import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute.tsx";
 import AdminRoute from "../components/ProtectedRoute/AdminRoute.tsx";
 import Activate from "../pages/Activate/Activate.tsx";
+import Profile from "../pages/Profile/Profile.tsx";
 
 const routes = [
   {
@@ -45,6 +46,10 @@ const routes = [
   {
     path: "drugSummary",
     element: <ProtectedRoute><DrugSummary /></ProtectedRoute>,
+  },
+  {
+    path: "profile",
+    element: <ProtectedRoute><Profile /></ProtectedRoute>,
   },
   {
     path: "register",
