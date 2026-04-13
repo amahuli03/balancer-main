@@ -21,7 +21,7 @@ function LoginForm({ isAuthenticated, loginError }: LoginFormProps) {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/");
+      navigate("/profile");
     }
   }, [isAuthenticated, navigate]);
   useEffect(() => {
