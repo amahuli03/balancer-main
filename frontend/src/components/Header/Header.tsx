@@ -6,7 +6,7 @@ import { FeatureMenuDropDown } from "./FeatureMenuDropDown";
 import MdNavBar from "./MdNavBar";
 import { connect } from "react-redux";
 import { RootState } from "../../services/actions/types";
-import { FaChevronDown, FaSignOutAlt } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { useGlobalContext } from "../../contexts/GlobalContext.tsx";
 
 interface LoginFormProps {
@@ -25,11 +25,10 @@ const Header: React.FC<LoginFormProps> = ({ isAuthenticated, isSuperuser }) => {
 
   const authLinks = () => (
     <Link
-      to="/logout"
+      to="/profile"
       className="font-satoshi flex cursor-pointer items-center text-black hover:text-blue-600"
     >
-      Sign Out
-      <FaSignOutAlt className="ml-2 inline-block" />
+      My Account
     </Link>
   );
 

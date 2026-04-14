@@ -130,10 +130,10 @@ const MdNavBar = (props: LoginFormProps) => {
                     {isAuthenticated ? (
                       <li className="border-b border-gray-300 p-4">
                         <Link
-                          to="/logout"
+                          to="/profile"
                           className="mr-9 text-black hover:border-b-2 hover:border-blue-600 hover:text-black hover:no-underline"
                         >
-                          Sign Out
+                          My Account
                         </Link>
                       </li>
                     ) : (
